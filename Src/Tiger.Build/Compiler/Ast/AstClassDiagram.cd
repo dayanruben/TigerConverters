@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tiger.Build.Compiler.Ast.AddOnlyList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAABAACAAAAAQAAAAAAAAEAAAAAAAEgAA=</HashCode>
+      <FileName>Compiler\Ast\AddOnlyList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.WhileExpression" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgAAAAAAAAAAABAAQAAAAAAgAAAAAACAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\WhileExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.AliasTypeDeclarationNode" Collapsed="true">
+    <Position X="59" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Compiler\Ast\AliasTypeDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ArrayIndexExpression" Collapsed="true">
+    <Position X="38.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQAAAAAAgAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\ArrayIndexExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ArrayInitializationExpression" Collapsed="true">
+    <Position X="45.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAgAQAAAAAAkAAAUCAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\ArrayDefaultInitializationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ArrayTypeDeclarationNode" Collapsed="true">
+    <Position X="63.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Compiler\Ast\ArrayTypeDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.AssignExpression" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAACACAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\AssignExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.BinaryExpression" Collapsed="true">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACACAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\BinaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.BoolLiteral" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\BoolLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ErrorCollection" Collapsed="true">
+    <Position X="70" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\ErrorCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.Expression" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ForLoopExpression" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAEBAAQAAAAIAgIAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\ForLoopExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.FunctionCallExpression" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAQAACAAAgAAAYAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\FunctionCallExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.FunctionDefinitionExpression" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAQAAAABAAQAAAAAAgBAAYAACAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\FunctionDefinitionExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.FunctionInvokeExpression" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAQAACAAAgAAAQAAAAAEAAA=</HashCode>
+      <FileName>Compiler\Ast\FunctionInvokeExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.FunctionParameterExpression" Collapsed="true">
+    <Position X="34.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAQAAAAAAhAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\FunctionParameterExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.IfThenElseExpression" Collapsed="true">
+    <Position X="50" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAQAAAAAAgAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\IfThenElseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.IfThenExpression" Collapsed="true">
+    <Position X="50" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAQAAAAAAgAAAQAACAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\IfThenExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.IntLiteral" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\IntLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.LetInExpression" Collapsed="true">
+    <Position X="23" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgIAAQAAAIAABAAQAAQAAAggAAQAAAAIAAAA=</HashCode>
+      <FileName>Compiler\Ast\LetInExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ListSemiExpression" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAABAAAAABAAQAAAAAAgAEAQAAAAAAEAA=</HashCode>
+      <FileName>Compiler\Ast\ListSemiExpression.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.MemberAccessExpression" Collapsed="true">
+    <Position X="38.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\MemberAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.MethodCallExpression" Collapsed="true">
+    <Position X="41" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAQACAAAEAAA=</HashCode>
+      <FileName>Compiler\Ast\MethodCallExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.Node" Collapsed="true">
+    <Position X="33" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAgAAAAAAAAAAAAAAAAgAAAAAAAAYAAAg=</HashCode>
+      <FileName>Compiler\Ast\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ProgramExpression" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAgAQAAAAAAgAAAQAAAAAAAEA=</HashCode>
+      <FileName>Compiler\Ast\ProgramExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.PropertyAccessExpression" Collapsed="true">
+    <Position X="36.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAgAAAQAAAABAAAA=</HashCode>
+      <FileName>Compiler\Ast\PropertyAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.RecordDeclarationNode" Collapsed="true">
+    <Position X="61.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAACAAAiAA=</HashCode>
+      <FileName>Compiler\Ast\RecordDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.RecordFieldNode" Collapsed="true">
+    <Position X="70" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\RecordFieldNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.StringLiteral" Collapsed="true">
+    <Position X="47.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\StringLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.TypeDeclarationNode" Collapsed="true">
+    <Position X="61.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\TypeDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.UnaryOperationExpression" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAQAQAAAAAAIAA=</HashCode>
+      <FileName>Compiler\Ast\UnaryOperationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.EmptyExpression" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\EmptyExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.VariableAccessExpression" Collapsed="true">
+    <Position X="32" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAEAAAQAACAAAgAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\VariableAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.VariableDeclarationExpression" Collapsed="true">
+    <Position X="43.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAAAEAAAQAAACAAgAAAQAgAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\VariableDeclarationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.ArrayDefaultInitializationExpression" Collapsed="true">
+    <Position X="45.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAAAAAgIAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\ArrayDefaultInitializationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.BinaryOperationExpression" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAIAA=</HashCode>
+      <FileName>Compiler\Ast\BinaryOperationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.CheckSemanticOnlyOnceExpression" Collapsed="true">
+    <Position X="54.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAgAQAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\CheckSemanticOnlyOnceExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.NullLiteralExpression" Collapsed="true">
+    <Position X="56.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAAAAAAgAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\NullLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.Null" Collapsed="true">
+    <Position X="68.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\NullLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.RecordInitExpression" Collapsed="true">
+    <Position X="52.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAhAAAQAAAAAAgAA=</HashCode>
+      <FileName>Compiler\Ast\RecordInitExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.FieldInitializationNode" Collapsed="true">
+    <Position X="65.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\RecordInitExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Build.Compiler.Ast.Statement" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Compiler\Ast\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

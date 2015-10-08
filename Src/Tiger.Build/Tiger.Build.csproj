@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABB1B286-581C-4D10-855F-79FC23F335C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tiger.Build</RootNamespace>
+    <AssemblyName>Tiger.Build</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\3rd party\Lib\ANTLR\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compiler\Ast\ArrayInitExpression.cs" />
+    <Compile Include="Compiler\Ast\ArrayInitializationExpression.cs" />
+    <Compile Include="Compiler\Ast\CastExpression.cs" />
+    <Compile Include="Compiler\Ast\DefaultValueExpression.cs" />
+    <Compile Include="Compiler\Ast\FieldInitializationNode.cs" />
+    <Compile Include="Compiler\Ast\ForInExpression.cs" />
+    <Compile Include="Compiler\Ast\IAddToScope.cs" />
+    <Compile Include="Compiler\Ast\IdentifierNode.cs" />
+    <Compile Include="Compiler\Ast\IReferenceType.cs" />
+    <Compile Include="Compiler\Ast\LogicalBinaryOperationExpression.cs" />
+    <Compile Include="Compiler\Ast\MatchExpression.cs" />
+    <Compile Include="Compiler\Ast\NewExpression.cs" />
+    <Compile Include="Compiler\Ast\ReturnExpression.cs" />
+    <Compile Include="Compiler\Ast\ThrowExpression.cs" />
+    <Compile Include="Compiler\Ast\ToBooleanExpression.cs" />
+    <Compile Include="Compiler\Ast\TypeCastExpression.cs" />
+    <Compile Include="Compiler\Ast\TypeReferenceNode.cs" />
+    <Compile Include="Compiler\Ast\VariableDeclarationBase.cs" />
+    <Compile Include="Compiler\Common\AddOnlyList.cs" />
+    <Compile Include="Compiler\Ast\AliasTypeDeclarationNode.cs" />
+    <Compile Include="Compiler\Ast\ArrayIndexExpression.cs" />
+    <Compile Include="Compiler\Ast\ArrayDefaultInitializationExpression.cs" />
+    <Compile Include="Compiler\Ast\ArrayTypeDeclarationNode.cs" />
+    <Compile Include="Compiler\Ast\AssignExpression.cs" />
+    <Compile Include="Compiler\Ast\BinaryOperationExpression.cs" />
+    <Compile Include="Compiler\Ast\BreakExpression.cs" />
+    <Compile Include="Compiler\Ast\CheckSemanticOnlyOnceExpression.cs" />
+    <Compile Include="Compiler\Ast\ContinueExpression.cs" />
+    <Compile Include="Compiler\Ast\EmptyExpression.cs" />
+    <Compile Include="Compiler\Ast\NullLiteralExpression.cs" />
+    <Compile Include="Compiler\Ast\OperatorExtensors.cs" />
+    <Compile Include="Compiler\Ast\RecordInitExpression.cs" />
+    <Compile Include="Compiler\Ast\Statement.cs" />
+    <Compile Include="Compiler\Common\AstHelper.cs" />
+    <Compile Include="Compiler\Ast\BinaryExpression.cs" />
+    <Compile Include="Compiler\Ast\BoolLiteral.cs" />
+    <Compile Include="Compiler\Ast\Expression.cs" />
+    <Compile Include="Compiler\Ast\ForLoopExpression.cs" />
+    <Compile Include="Compiler\Ast\FunctionCallExpression.cs" />
+    <Compile Include="Compiler\Ast\FunctionDefinitionExpression.cs" />
+    <Compile Include="Compiler\Ast\FunctionInvokeExpression.cs" />
+    <Compile Include="Compiler\Ast\FunctionParameterExpression.cs" />
+    <Compile Include="Compiler\Ast\IfThenElseExpression.cs" />
+    <Compile Include="Compiler\Ast\IfThenExpression.cs" />
+    <Compile Include="Compiler\Ast\IntLiteralExpression.cs" />
+    <Compile Include="Compiler\Ast\LetInExpression.cs" />
+    <Compile Include="Compiler\Ast\ListSemiExpression.cs" />
+    <Compile Include="Compiler\Ast\MemberAccessExpression.cs" />
+    <Compile Include="Compiler\Ast\MethodCallExpression.cs" />
+    <Compile Include="Compiler\Ast\Node.cs" />
+    <Compile Include="Compiler\Ast\ProgramExpression.cs" />
+    <Compile Include="Compiler\Ast\FieldAccessExpression.cs" />
+    <Compile Include="Compiler\Ast\RecordDeclarationNode.cs" />
+    <Compile Include="Compiler\Ast\RecordFieldNode.cs" />
+    <Compile Include="Compiler\Ast\StringLiteralExpression.cs" />
+    <Compile Include="Compiler\Ast\TypeDeclarationNode.cs" />
+    <Compile Include="Compiler\Ast\UnaryOperationExpression.cs" />
+    <Compile Include="Compiler\Ast\VariableAccessExpression.cs" />
+    <Compile Include="Compiler\Ast\VariableDeclarationExpression.cs" />
+    <Compile Include="Compiler\Ast\WhileExpression.cs" />
+    <Compile Include="Compiler\Common\CacheDict.cs" />
+    <Compile Include="Compiler\Common\ErrorSet.cs" />
+    <Compile Include="Compiler\Common\Expecting.cs" />
+    <Compile Include="Compiler\Common\ExpressionExtensors.cs" />
+    <Compile Include="Compiler\Common\FunctionReference.cs" />
+    <Compile Include="Compiler\Common\FunctionScope.cs" />
+    <Compile Include="Compiler\Common\LoopScope.cs" />
+    <Compile Include="Compiler\Common\ScopeBase.cs" />
+    <Compile Include="Compiler\Common\ScopeCollection.cs" />
+    <Compile Include="Compiler\Common\SemanticException.cs" />
+    <Compile Include="Compiler\Common\SourceLocation.cs" />
+    <Compile Include="Compiler\Common\SyntaxException.cs" />
+    <Compile Include="Compiler\Common\TigerRuntime.cs" />
+    <Compile Include="Compiler\Common\TypeExtensions.cs" />
+    <Compile Include="Compiler\Common\TypeScope.cs" />
+    <Compile Include="Compiler\Common\TypeUtils.cs" />
+    <Compile Include="Compiler\Common\VariableScope.cs" />
+    <Compile Include="Compiler\Error\CanNotInferArrayTypeError.cs" />
+    <Compile Include="Compiler\Error\CanNotInferTypeError.cs" />
+    <Compile Include="Compiler\Error\CircularTypeReferencesError.cs" />
+    <Compile Include="Compiler\Error\ConditionalNotEquivalentTypes.cs" />
+    <Compile Include="Compiler\Error\ErrorBase.cs" />
+    <Compile Include="Compiler\Error\ExpectingTypeError.cs" />
+    <Compile Include="Compiler\Error\FieldNotFoundError.cs" />
+    <Compile Include="Compiler\Error\FunctionNotDefinedError.cs" />
+    <Compile Include="Compiler\Common\TigerOperator.cs" />
+    <Compile Include="Compiler\Common\TypePath.cs" />
+    <Compile Include="Compiler\Error\IdentifierExpectedError.cs" />
+    <Compile Include="Compiler\Error\IfThenBodyReturnsValueError.cs" />
+    <Compile Include="Compiler\Error\MemberNotFoundError.cs" />
+    <Compile Include="Compiler\Error\MemberWithSameSignatureAlreadyDefinedError.cs" />
+    <Compile Include="Compiler\Error\MethodNotFoundError.cs" />
+    <Compile Include="Compiler\Error\NotAnArrayTypeError.cs" />
+    <Compile Include="Compiler\Error\NotAssignableError.cs" />
+    <Compile Include="Compiler\Error\NotBoolConvertibleError.cs" />
+    <Compile Include="Compiler\Error\NotEnumerableError.cs" />
+    <Compile Include="Compiler\Error\OperatorNotDefinedError.cs" />
+    <Compile Include="Compiler\Error\SomeParametersWithTheSameNameError.cs" />
+    <Compile Include="Compiler\Error\OutOfScopeError.cs" />
+    <Compile Include="Compiler\Error\TypeMatchedError.cs" />
+    <Compile Include="Compiler\Error\TypeMismatchedError.cs" />
+    <Compile Include="Compiler\Error\TypeWithSameNameAlreadyDefinedError.cs" />
+    <Compile Include="Compiler\Error\VariableAlreadyDefinedError.cs" />
+    <Compile Include="Compiler\Error\WhileBodyReturnsValueError.cs" />
+    <Compile Include="Compiler\Parsing\LexicalError.cs" />
+    <Compile Include="Compiler\Error\MissingTypeError.cs" />
+    <Compile Include="Compiler\Error\IdentifierNotDefinedError.cs" />
+    <Compile Include="Compiler\Error\MemberWithSameNameAlreadyDefinedError.cs" />
+    <Compile Include="Compiler\Parsing\TigerLexer.cs" />
+    <Compile Include="Compiler\Parsing\TigerParser.cs" />
+    <Compile Include="Compiler\Parsing\TigerParser.Partial.cs" />
+    <Compile Include="Compiler\Common\Scope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthorNotes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Compiler\Ast\AstClassDiagram.cd" />
+    <None Include="Compiler\Parsing\Tiger.g" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

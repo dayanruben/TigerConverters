@@ -1,0 +1,30 @@
+﻿
+Annadir todos los ensamblados en la carpeta ~\Src\Languages\Tiger, mas adelante podemos 
+cambiar esta estructura, y borrar las cosas del DLR que no necesitemos:
+	- IronPython, IronRuby, sympl...
+
+En este ensamblado deben estar todas las clases correspondientes al compilador:
+	- Lexer, Parser
+	- AST clases
+	- Code generation
+hacer otro ensamblado (Console application) que sea el compilador.
+
+La implementacion de ruby es muy parecida a tiger, al menos para la generacion de codigo.
+	- Ruby.Build/Compiler/Generation 
+	- ILGen en el core, contiene helper methods para facilitar la generacion de codigo
+
+													Ariel 3/10/2011 5:30 AM
+
+Recien me di cuenta que no se puede realizar el proceso de generacion del lenguaje en un
+solo paso, el ejemplo es simple: si tenemos "var x := Foo()". Si "Foo()" esta definido mas
+adelante en el codigo, entonces en el momento de procesar la instruccion no podriamos deducir
+el tipo de x. Esta es la razon por la cual hay que hacer al menos 2 pasos.
+
+En total realizaremos 3 pasos:
+	1. El parser genera el AST.
+	2. Chequeo semantico. Se llama al metodo "CheckSemantics" en todos los nodos del AST.
+	Aqui comprobamos en busca de errores semanticos, generamos todos los tipos y resolvemos
+	todas las referencias usando los scope.
+	3. Generacion de codigo. Si no hay errores se llama al metodo "Transform" del AST. Este
+	metodo retorna una instancia de "System.Linq.Expressions.Expression" que guardamos luego
+	en un ensamblado o la podemos ejecutar directamente.

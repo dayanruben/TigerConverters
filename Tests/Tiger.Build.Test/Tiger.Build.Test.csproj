@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD02DAF0-2E95-4D7A-A198-8A26C02F5090}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tiger.Build.Test</RootNamespace>
+    <AssemblyName>Tiger.Build.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\3rd party\Lib\ANTLR\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rd party\Tools\NUnit\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compiler\Parsing\TigerParser_Test\BinaryExpressionsTest.cs" />
+    <Compile Include="Compiler\Parsing\TigerParser_Test\UnaryExpresionsTests.cs" />
+    <Compile Include="Compiler\Program_Tests\array_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\assignments_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\binary_comparison_operation_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\check_prorgam_results_Tests.cs" />
+    <Compile Include="Compiler\Program_Tests\Appel_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\binary_operations_errors.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\break_out_of_loops_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\can_not_infer_type_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\circular_type_reference_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\function_not_defined_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\identifier_expected_keyword_used_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\identifier_not_defined_in_scope_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\member_not_defined_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\member_with_same_name_already_defined_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\not_assignable_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\records_errors.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\syntax_exception_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\type_matched_error.cs" />
+    <Compile Include="Compiler\Program_Tests\Errors\type_mismatched_errors.cs" />
+    <Compile Include="Compiler\Program_Tests\If_then_and_if_then_else_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\loop_tests.cs" />
+    <Compile Include="Compiler\Program_Tests\match_expression_stmt.cs" />
+    <Compile Include="Compiler\Program_Tests\record_initialization.cs" />
+    <Compile Include="Compiler\Program_Tests\runtime_function_calls.cs" />
+    <Compile Include="Compiler\Program_Tests\scope_tests.cs" />
+    <Compile Include="Mother.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scope_Tests\FunctionScope_Tests.cs" />
+    <Compile Include="Scope_Tests\ScopeBase_generaltests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Tiger.Build\Tiger.Build.csproj">
+      <Project>{ABB1B286-581C-4D10-855F-79FC23F335C9}</Project>
+      <Name>Tiger.Build</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

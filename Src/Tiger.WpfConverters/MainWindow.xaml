@@ -1,0 +1,31 @@
+﻿<Window x:Class="Tiger.WpfConverters.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:tc="clr-namespace:Tiger.WpfConverters"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" Title="MainWindow" Height="350" Width="525">
+
+  <Window.Resources>
+
+    <tc:ValueConverter x:Key="concatBoolConverter">
+      <tc:ValueConverter.Program>
+        <sys:String>
+          let
+          type human = { age: int, siblin: human}
+          var human1 := human{age = 4, siblin = nil}
+          var x:=concat( (string)value," x       x  123")
+          in
+          x
+          end
+        </sys:String>
+      </tc:ValueConverter.Program>
+    </tc:ValueConverter>
+  </Window.Resources>
+
+  <Grid>
+    <CheckBox x:Name="none" Margin="83,0,0,0" Content="look me" VerticalAlignment="Top" HorizontalAlignment="Left" />
+
+    <CheckBox Content="check me" IsChecked="{Binding IsChecked, ElementName=none}" VerticalAlignment="Top"
+              HorizontalAlignment="Left" />
+    <TextBox Text="abc11" Height="23" Margin="145,41,238,0" Name="textBox1" VerticalAlignment="Top" />
+    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="textBox2" VerticalAlignment="Top"
+             Width="120" Text="{Binding ElementName=textBox1, Path=Text, Converter={StaticResource concatBoolConverter}}" />
+  </Grid>
+</Window>

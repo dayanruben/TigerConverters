@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="4.0"
+         DefaultTargets="Compile">
+
+  <UsingTask AssemblyFile="..\3rdParty Components\Tools\MSBuildAsyncExecTask\AsyncExec.dll" TaskName="AsyncExec.AsyncExec"/>
+  
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <BuildArtifacts Include="..\buildArtifacts\"/>
+    <SolutionFile Include="..\TigerCompiler.sln"/>
+    
+    <Cassini Include="$(CommonProgramFiles)\microsoft shared\DevServer\10.0\WebDev.WebServer40.EXE" />
+    <SilverlightWebsite Include="..\buildArtifacts\_PublishedWebsites\Boggs.Web\" />
+  </ItemGroup>
+  
+  <Target Name="Clean">
+    <RemoveDir Directories="@(BuildArtifacts)"/>
+  </Target>
+  
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="@(BuildArtifacts)"/>
+  </Target>
+  
+  <Target Name="Compile" DependsOnTargets="Init">
+    <MSBuild Projects="@(SolutionFile)" Targets="Rebuild" Properties="OutDir=%(BuildArtifacts.FullPath)"/>
+  </Target>
+
+  <Target Name="StartService" DependsOnTargets="StopWebsite">
+    <AsyncExec Command='"@(Cassini)" /port:8888 /path:"%(ServiceWebsite.FullPath) '/>
+  </Target>
+
+  <Target Name="StopWebsite">
+    <Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/>
+  </Target>
+  
+  <Target Name="StartSilverlight" DependsOnTargets="StartService">
+    <AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(SilverlightWebsite.FullPath) '/>
+	<AsyncExec Command='iexplore "http://localhost:9999/BoggsTestPage.aspx"'/>
+  </Target>
+
+  <Target Name="BuildAndDeploy" DependsOnTargets="Compile">
+    <Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" 
+          IgnoreStandardErrorWarningFormat="true"/>
+    <AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(SilverlightWebsite.FullPath) '/>
+	<AsyncExec Command='iexplore http://localhost:9999/BoggsTestPage.aspx'/>
+  </Target>
+</Project>
+
